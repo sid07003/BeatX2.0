@@ -1,0 +1,86 @@
+#music_player {
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px -5px 5px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 1;
+}
+
+#music {
+    position: absolute;
+    visibility: hidden;
+}
+
+#left_part {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+#middle_part {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#music_controllers {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#music_progress {
+    width: 70%;
+    background-color: gray;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    /* Ensure child divs are positioned relative to this parent */
+}
+
+#music_progress div {
+    position: absolute;
+    /* Position the child div absolutely within the parent */
+    height: 100%;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    /* Start the progress bar from the left edge of the parent */
+}
+
+#sound_controller {
+    display: flex;
+    width: 130px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#current_time{
+    color:white;
+    position: absolute;
+    left:450px;
+    top:40px;
+}
+
+#duration{
+    color:white;
+    position: absolute;
+    right:450px;
+    top:40px;
+}

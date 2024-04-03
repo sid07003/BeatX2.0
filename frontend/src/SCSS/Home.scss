@@ -1,0 +1,216 @@
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw - 16vw);
+    overflow-y: scroll;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.searchbar {
+    height: 40px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 30vw;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.profile {
+    margin-right: 20px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+#popularArtists {
+    height: 280px;
+    width: calc(100% - 3rem);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 10px 25px 20px 25px;
+}
+
+#popular {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#sideScroll {
+    height: calc(100% - 300px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftscroll {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+#leftscroll:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+#rightscroll {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-top: 50px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.4);
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+#rightscroll:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+#artists {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+    height: 215px;
+    width: calc(100% - 100px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px 0px 0px 0px;
+    scroll-behavior: smooth;
+}
+
+#trendingSongs {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+    height: 215px;
+    width: calc(100% - 100px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px 0px 0px 0px;
+    scroll-behavior: smooth;
+}
+
+#trendingSongs::-webkit-scrollbar {
+    height: 5px;
+}
+
+#trendingSongs::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+#trendingSongs::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#artists::-webkit-scrollbar {
+    height: 5px;
+}
+
+#artists::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+#artists::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#artist {
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    object-fit: cover;
+}
+
+#artist:hover{
+    box-shadow: 0px  0px 2px 2px rgba(255, 255, 255, 0.6) ;
+}
+
+#trending {
+    height: 130px;
+    width: 130px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    object-fit: cover;
+}
+
+#trending:hover{
+    box-shadow: 0px  0px 2px 2px rgba(255, 255, 255, 0.6) ;
+}
+
+p {
+    color: white;
+    opacity: 75%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#albums{
+    height: 350px;
+    width: calc(100% - 3rem);
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px 25px 45px 25px;
+}
+
+#album_playlists {
+    display: flex;
+    justify-content: center;
+}
+
+#album_playlist{
+    margin-top: 10px;
+    height:200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playlist_image{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    object-fit: cover;
+}
+
+#playlist_image:hover{
+    box-shadow: 0px  0px 2px 2px rgba(255, 255, 255, 0.6) ;
+}

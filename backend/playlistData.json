@@ -1,0 +1,66 @@
+[
+    {
+        "playlist":[
+            {
+                "playlist_name":"Arijit Singh",
+                "playlist_image":"../images/Arijit Singh.jpeg"
+            },
+            {
+                "playlist_name":"Shreya Ghoshal",
+                "playlist_image":"../images//Shreya Ghoshal.jpeg"
+            },
+            {
+                "playlist_name":"Sonu Nigam",
+                "playlist_image":"../images//Sonu Nigam.jpeg"
+            },
+            {
+                "playlist_name":"Atif Aslam",
+                "playlist_image":"../images//Atif Aslam.jpeg"
+            },
+            {
+                "playlist_name":"Badshah",
+                "playlist_image":"../images//Badshah.jpeg"
+            },
+            {
+                "playlist_name":"Jubin Nautiyal",
+                "playlist_image":"../images//Jubin Nautiyal.jpeg"
+            },
+            {
+                "playlist_name":"Shubh",
+                "playlist_image":"../images//Shubh.jpeg"
+            },
+            {
+                "playlist_name":"Honey Singh",
+                "playlist_image":"../images//Honey Singh.jpeg"
+            },
+            {
+                "playlist_name":"Diljit Dosanjh",
+                "playlist_image":"../images//Diljit Dosanjh.jpeg"
+            },
+            {
+                "playlist_name":"Armaan Malik",
+                "playlist_image":"../images//Armaan Malik.jpeg"
+            }
+        ]
+    },
+    {
+        "playlist":[
+            {
+                "playlist_name":"Popular Songs",
+                "playlist_image":"../images//Popular Songs.jpg"
+            },
+            {
+                "playlist_name":"Punjabi Hits",
+                "playlist_image":"../images//Punjabi Hits.jpeg"
+            },
+            {
+                "playlist_name":"Romantic Hits",
+                "playlist_image":"../images//Romantic Hits.jpeg"
+            },
+            {
+                "playlist_name":"Animal",
+                "playlist_image":"../images//Animal.jpeg"
+            }
+        ]
+    }
+]

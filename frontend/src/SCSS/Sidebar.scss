@@ -1,0 +1,132 @@
+.sidebar {
+    width: 16vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 80%;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+#beatxLogo{
+    color: #fff;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.home {
+    width: 80%;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration:none;
+}
+.homeText{
+    margin: 5px;
+    color:white
+}
+
+.search {
+    width: 80%;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.library {
+    width: 80%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: white;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.content{
+    font-size: 15px;
+    width:90%;
+}
+
+.liked {
+    display: flex;
+    justify-content: left;
+    color: rgb(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+    padding:5px;
+    height:45px;
+    transition: font-size 0.2s;
+    cursor: pointer;
+}
+.liked:hover{
+    font-size:16px;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+    padding:5px;
+    height:150px;
+}
+
+#playlist_element{
+    color: rgb(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: font-size 0.2s;
+}
+#playlist_element:hover{
+    font-size:16px;
+}
+
+@media (max-width:1400px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content{
+        font-size: 10px;
+    }
+}
+
+#playlist_names{
+    text-decoration: underline rgba(255,255,255,0);
+    text-decoration-thickness: 2px;
+    transition: text-decoration 0.3s;
+}
+
+#playlist_names:hover{
+    text-decoration: underline rgba(255,255,255,0.5);
+    text-decoration-thickness: 2px;
+}

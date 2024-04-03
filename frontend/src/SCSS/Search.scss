@@ -1,0 +1,98 @@
+#search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw - 16vw);
+    overflow-y: auto;
+}
+
+#search_div {
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    width: 95%;
+    align-items: center;
+    padding: 20px;
+}
+
+#search_songs_area {
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    overflow-y: hidden;
+}
+
+#playlist1 {
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+#backToSearch {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+#backToSearch:hover {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.3);
+}
+
+#songs {
+    display: flex;
+    height: 75px;
+    font-size: 15px;
+    width: 98%;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.2s;
+}
+
+#songs:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#corrections {
+    color: white;
+    padding-top: 20px;
+}
+
+#cross{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    left: 450px;
+    top: 50px;
+    color: white;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

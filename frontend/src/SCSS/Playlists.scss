@@ -1,0 +1,310 @@
+#myplaylist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw - 16vw);
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#search_div{
+    height:100px;
+    display: flex;
+    justify-content: left;
+    width:95%;
+    align-items: center;
+    padding: 20px;
+}
+
+#addPlaylist{
+    font-size:20px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+#playlist_area{
+    height:max-content;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex:0 0 auto;
+    align-items: center;
+    width:95%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+#title{
+    display: flex;
+    height:71px;
+    width: 98%;
+    align-items: center;
+    font-size: 20px;
+    padding:10px;
+    margin-left: 34px;
+    border-bottom: 3px solid white;
+    margin-right: 35px;
+}
+
+#blank{
+    width: 20%;
+}
+
+#playlist_name{
+    width: 29%;
+    color:white;
+}
+
+#playlist_length{
+    width: 20%;
+    color:white;
+}
+
+#add_to_playlist{
+    width:20%;
+}
+
+#playlists{
+    display: flex;
+    height:75px;
+    font-size: 15px;
+    width:98%;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255,0.5);
+    transition: background-color 0.2s;
+}
+
+#playlists:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+#body_name{
+    color:white;
+    opacity: 75%;
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+#body_length{
+    width: 20%;
+    color:white;
+    opacity: 75%;
+}
+
+#remove_playlist_btn{
+    height:40px;
+    width:140px;
+    border:3px solid rgb(5, 92, 13);
+    background-color: rgb(67, 181, 14);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#description3{
+    width:100%;
+    display:flex;
+    margin-top: 20px;
+}
+
+#default{
+    font-size:20px;
+    color:rgba(255,255,255,0.7);
+    text-align: center;
+    padding-top: 20px;
+}
+
+#btn1{
+    height:40px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#create_playlist_area{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:2;
+}
+
+#create_playlist{
+    height:250px;
+    width:300px;
+    background-color:black;
+    position: absolute;
+    top:200px;
+    left:calc(100vw / 2 - 150px);
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgba(128,128,128,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#create_playlist_heading_area{
+    height:50px;
+    width: 90%;
+    color:white;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#create_playlist_form{
+    height:100px;
+    width: 90%;
+}
+
+#create_playlist_heading_close{
+    height:30px;
+    width:30px;
+    border:2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#create_playlist_heading{
+    width:calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#create_playlist_form_heading{
+    color:white;
+    font-size:20px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+#create_playlist_form_input{
+    height:40px;
+    width:100%;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: 1px solid white;
+    padding:10px;
+    border-radius: 5px;
+    color:white;
+}
+
+#create_playlist_form_addsong{
+    height:40px;
+    width:90%;
+    background-color: rgba(128, 128, 128, 0.5);
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#create_playlist_form_create{
+    height:40px;
+    width:90%;
+    background-color: rgba(128, 128, 128, 0.5);
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#liked_heading_content_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#liked_heading_content_else_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#liked_heading{
+    height:300px;
+    flex:0 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    width:95%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#liked_heading_content{
+    height:200px;
+    width:200px;
+    margin-left:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#liked_heading_content_right{
+    height:200px;
+    width:calc(100% - 200px);
+    margin-left:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header_image{
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+#description1{
+    color:white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+#description2{
+    color:rgba(255,255,255,0.8);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#description3{
+    width:100%;
+    display:flex;
+    margin-top: 20px;
+}

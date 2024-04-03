@@ -1,0 +1,456 @@
+[
+    {
+      "song_name": "Aaja Soniye",
+      "song_duration": "4:55",
+      "song_imagepath": "../images/Aaja Soniye.jpeg",
+      "song_audiopath": "../songs/Aaja Soniye.mp3",
+      "song_artists": ["Sonu Nigam", "Alka Yagnik"],
+      "playlist": ["Sonu Nigam"]
+    },
+    {
+      "song_name": "Agar Mein Kahoon",
+      "song_duration": "5:28",
+      "song_imagepath": "../images/Agar Mein Kahoon.jpeg",
+      "song_audiopath": "../songs/Agar Mein Kahoon.mp3",
+      "song_artists": ["Sonu Nigam", "Shreya Ghoshal"],
+      "playlist": ["Sonu Nigam", "Shreya Ghoshal", "Romantic Hits"]
+    },
+    {
+      "song_name": "Arjan Vailly",
+      "song_duration": "3:00",
+      "song_imagepath": "../images/Arjan Vailly.jpeg",
+      "song_audiopath": "../songs/Arjan Vailly.mp3",
+      "song_artists": ["Manan Bharadwaj"],
+      "playlist": ["Animal"]
+    },
+    {
+      "song_name": "Apna Bana Le",
+      "song_duration": "3:24",
+      "song_imagepath": "../images/Apna Bana Le.jpeg",
+      "song_audiopath": "../songs/Apna Bana Le.mp3",
+      "song_artists": ["Arijit Singh", "Sachin-Jigar"],
+      "playlist": ["Arijit Singh", "Romantic Hits","Special"]
+    },
+    {
+      "song_name": "Besabriyaan",
+      "song_duration": "3:30",
+      "song_imagepath": "../images/Besabriyaan.jpeg",
+      "song_audiopath": "../songs/Besabriyaan.mp3",
+      "song_artists": ["Armaan Malik"],
+      "playlist": ["Armaan Malik"]
+    },
+    {
+      "song_name": "Baawla",
+      "song_duration": "3:02",
+      "song_imagepath": "../images/Baawla.jpeg",
+      "song_audiopath": "../songs/Baawla.mp3",
+      "song_artists": ["Badshah"],
+      "playlist": ["Badshah"]
+    },
+    {
+      "song_name": "Case",
+      "song_duration": "2:15",
+      "song_imagepath": "../images/Case.jpeg",
+      "song_audiopath": "../songs/Case.mp3",
+      "song_artists": ["Diljit Dosanjh"],
+      "playlist": ["Diljit Dosanjh", "Punjabi Hits"]
+    },
+    {
+      "song_name": "Born To Shine",
+      "song_duration": "3:37",
+      "song_imagepath": "../images/Born To Shine.jpeg",
+      "song_audiopath": "../songs/Born To Shine.mp3",
+      "song_artists": ["Diljit Dosanjh"],
+      "playlist": ["Diljit Dosanjh", "Punjabi Hits"]
+    },
+    {
+      "song_name": "Agar Tum Saath Ho",
+      "song_duration": "3:11",
+      "song_imagepath": "../images/Agar Tum Saath Ho.jpeg",
+      "song_audiopath": "../songs/Agar Tum Saath Ho.mp3",
+      "song_artists": ["Arijit Singh", "Alka Yagnik"],
+      "playlist": ["Arijit Singh", "Romantic Hits"]
+    },
+    {
+      "song_name": "Aam Jahe Munde",
+      "song_duration": "4:14",
+      "song_imagepath": "../images/Aam Jahe Munde.jpeg",
+      "song_audiopath": "../songs/Aam Jahe Munde.mp3",
+      "song_artists": ["Parmish Verma", "Pardhaan"],
+      "playlist": ["Special"]
+    },
+    {
+      "song_name": "Ghoomar",
+      "song_duration": "3:19",
+      "song_imagepath": "../images/Ghoomar.jpeg",
+      "song_audiopath": "../songs/Ghoomar.mp3",
+      "song_artists": ["Shreya Ghoshal"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Dil Diyaan Gallan",
+      "song_duration": "3:04",
+      "song_imagepath": "../images/Dil Diyaan Gallan.jpeg",
+      "song_audiopath": "../songs/Dil Diyaan Gallan.mp3",
+      "song_artists": ["Atif Aslam", "Vishal-Shekhar"],
+      "playlist": ["Atif Aslam", "Popular Songs"]
+    },
+    {
+      "song_name": "Goat",
+      "song_duration": "3:43",
+      "song_imagepath": "../images/Goat.jpeg",
+      "song_audiopath": "../songs/Goat.mp3",
+      "song_artists": ["Diljit Dosanjh"],
+      "playlist": ["Diljit Dosanjh"]
+    },
+    {
+      "song_name": "Haiwaan",
+      "song_duration": "2:41",
+      "song_imagepath": "../images/Haiwaan.jpeg",
+      "song_audiopath": "../songs/Haiwaan.mp3",
+      "song_artists": ["Ashim Kemson"],
+      "playlist": ["Animal"]
+    },
+    {
+      "song_name": "Dil Dooba",
+      "song_duration": "3:47",
+      "song_imagepath": "../images/Dil Dooba.jpeg",
+      "song_audiopath": "../songs/Dil Dooba.mp3",
+      "song_artists": ["Sonu Nigam", "Shreya Ghoshal"],
+      "playlist": ["Sonu Nigam", "Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Deewani Mastani",
+      "song_duration": "5:53",
+      "song_imagepath": "../images/Deewani Mastani.jpeg",
+      "song_audiopath": "../songs/Deewani Mastani.mp3",
+      "song_artists": ["Shreya Ghoshal"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Bol Do Na Zara",
+      "song_duration": "4:53",
+      "song_imagepath": "../images/Bol Do Na Zara.jpeg",
+      "song_audiopath": "../songs/Bol Do Na Zara.mp3",
+      "song_artists": ["Armaan Malik", "Amaal Malik"],
+      "playlist": ["Armaan Malik"]
+    },
+    {
+      "song_name": "Hasi",
+      "song_duration": "2:36",
+      "song_imagepath": "../images/Hasi.jpeg",
+      "song_audiopath": "../songs/Hasi.mp3",
+      "song_artists": ["Shreya Ghoshal"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Hare Krishna Hare Rama",
+      "song_duration": "6:59",
+      "song_imagepath": "../images/Hare Krishna Hare Rama.jpeg",
+      "song_audiopath": "../songs/Hare Krishna Hare Rama.mp3",
+      "song_artists": ["Jubin Nautiyal"],
+      "playlist": ["Jubin Nautiyal"]
+    },
+    {
+      "song_name": "Jab Tak",
+      "song_duration": "3:30",
+      "song_imagepath": "../images/Jab Tak.jpeg",
+      "song_audiopath": "../songs/Jab Tak.mp3",
+      "song_artists": ["Armaan Malik"],
+      "playlist": ["Armaan Malik", "Romantic Hits", "Popular Songs","Special"]
+    },
+    {
+      "song_name": "Jaadui",
+      "song_duration": "3:47",
+      "song_imagepath": "../images/Jaadui.jpeg",
+      "song_audiopath": "../songs/Jaadui.mp3",
+      "song_artists": ["Jubin Nautiyal"],
+      "playlist": ["Jubin Nautiyal", "Romantic Hits"]
+    },
+    {
+      "song_name": "Kamaal",
+      "song_duration": "3:07",
+      "song_imagepath": "../images/Kamaal.jpeg",
+      "song_audiopath": "../songs/Kamaal.mp3",
+      "song_artists": ["Badshah", "Uchana Amit"],
+      "playlist": ["Badshah"]
+    },
+    {
+      "song_name": "King Shit",
+      "song_duration": "3:47",
+      "song_imagepath": "../images/King Shit.jpeg",
+      "song_audiopath": "../songs/King Shit.mp3",
+      "song_artists": ["Shubh"],
+      "playlist": ["Shubh", "Punjabi Hits"]
+    },
+    {
+      "song_name": "Issa Vibe",
+      "song_duration": "2:28",
+      "song_imagepath": "../images/Issa Vibe.jpeg",
+      "song_audiopath": "../songs/Issa Vibe.mp3",
+      "song_artists": ["Badshah"],
+      "playlist": ["Badshah"]
+    },
+    {
+      "song_name": "Kuley Kuley",
+      "song_duration": "3:29",
+      "song_imagepath": "../images/Kuley Kuley.jpeg",
+      "song_audiopath": "../songs/Kuley Kuley.mp3",
+      "song_artists": ["Honey Singh"],
+      "playlist": ["Honey Singh"]
+    },
+    {
+      "song_name": "Main Rang Sharbatoon Ka",
+      "song_duration": "4:30",
+      "song_imagepath": "../images/Main Rang Sharbatoon Ka.jpeg",
+      "song_audiopath": "../songs/Main Rang Sharbatoon Ka.mp3",
+      "song_artists": ["Atif Aslam", "Chinmayi"],
+      "playlist": ["Atif Aslam"]
+    },
+    {
+      "song_name": "Lemonade",
+      "song_duration": "2:46",
+      "song_imagepath": "../images/Lemonade.jpeg",
+      "song_audiopath": "../songs/Lemonade.mp3",
+      "song_artists": ["Diljit Dosanjh"],
+      "playlist": ["Diljit Dosanjh"]
+    },
+    {
+      "song_name": "Meri Maa Ke Barabar",
+      "song_duration": "5:27",
+      "song_imagepath": "../images/Meri Maa Ke Barabar.jpeg",
+      "song_audiopath": "../songs/Meri Maa Ke Barabar.mp3",
+      "song_artists": ["Jubin Nautiyal"],
+      "playlist": ["Jubin Nautiyal"]
+    },
+    {
+      "song_name": "Manike",
+      "song_duration": "3:58",
+      "song_imagepath": "../images/Manike.jpeg",
+      "song_audiopath": "../songs/Manike.mp3",
+      "song_artists": ["Jubin Nautiyal", "Yohani"],
+      "playlist": ["Jubin Nautiyal"]
+    },
+    {
+      "song_name": "Love Dose",
+      "song_duration": "4:36",
+      "song_imagepath": "../images/Love Dose.jpeg",
+      "song_audiopath": "../songs/Love Dose.mp3",
+      "song_artists": ["Honey Singh"],
+      "playlist": ["Honey Singh"]
+    },
+    {
+      "song_name": "Mere Dholna",
+      "song_duration": "7:02",
+      "song_imagepath": "../images/Mere Dholna.jpeg",
+      "song_audiopath": "../songs/Mere Dholna.mp3",
+      "song_artists": ["Shreya Ghoshal", "M.G.Sreekumar"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Nagada Sang Dhol",
+      "song_duration": "4:55",
+      "song_imagepath": "../images/Nagada Sang Dhol.jpeg",
+      "song_audiopath": "../songs/Nagada Sang Dhol.mp3",
+      "song_artists": ["Shreya Ghoshal"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Husn",
+      "song_duration": "3:59",
+      "song_imagepath": "../images/Husn.jpeg",
+      "song_audiopath": "../songs/Husn.mp3",
+      "song_artists": ["Anuv Jain"],
+      "playlist": ["Special"]
+    },
+    {
+      "song_name": "No Love",
+      "song_duration": "2:50",
+      "song_imagepath": "../images/No Love.jpeg",
+      "song_audiopath": "../songs/No Love.mp3",
+      "song_artists": ["Shubh"],
+      "playlist": ["Shubh"]
+    },
+    {
+      "song_name": "Paniyon Sa",
+      "song_duration": "3:26",
+      "song_imagepath": "../images/Paniyon Sa.jpeg",
+      "song_audiopath": "../songs/Paniyon Sa.mp3",
+      "song_artists": ["Atif Aslam"],
+      "playlist": ["Atif Aslam"]
+    },
+    {
+      "song_name": "Oonchi Oonchi Deewarein",
+      "song_duration": "3:15",
+      "song_imagepath": "../images/Oonchi Oonchi Deewarein.jpeg",
+      "song_audiopath": "../songs/Oonchi Oonchi Deewarein.mp3",
+      "song_artists": ["Arijit Singh"],
+      "playlist": ["Arijit Singh", "Special"]
+    },
+    {
+      "song_name": "Rait Zara Si",
+      "song_duration": "5:05",
+      "song_imagepath": "../images/Rait Zara Si.jpeg",
+      "song_audiopath": "../songs/Rait Zara Si.mp3",
+      "song_artists": ["A.R.Rahman", "Arijit Singh"],
+      "playlist": ["Arijit Singh"]
+    },
+    {
+      "song_name": "Hua Mein",
+      "song_duration": "4:35",
+      "song_imagepath": "../images/Hua Mein.jpeg",
+      "song_audiopath": "../songs/Hua Mein.mp3",
+      "song_artists": ["Raghav Chaitanya"],
+      "playlist": ["Animal"]
+    },
+    {
+      "song_name": "O Bedardeya",
+      "song_duration": "5:23",
+      "song_imagepath": "../images/O Bedardeya.jpeg",
+      "song_audiopath": "../songs/O Bedardeya.mp3",
+      "song_artists": ["Arijit Singh"],
+      "playlist": ["Arijit Singh"]
+    },
+    {
+      "song_name": "Phir Aur Kya Chahiye",
+      "song_duration": "3:35",
+      "song_imagepath": "../images/Phir Aur Kya Chahiye.jpeg",
+      "song_audiopath": "../songs/Phir Aur Kya Chahiye.mp3",
+      "song_artists": ["Arijit Singh"],
+      "playlist": ["Arijit Singh"]
+    },
+    {
+      "song_name": "Pehle Bhi Mein",
+      "song_duration": "4:08",
+      "song_imagepath": "../images/Pehle Bhi Mein.jpeg",
+      "song_audiopath": "../songs/Pehle Bhi Mein.mp3",
+      "song_artists": ["Vishal Mishra", "Raj Shekhar"],
+      "playlist": ["Animal", "Popular Songs","Special"]
+    },
+    {
+      "song_name": "Sab Tera",
+      "song_duration": "2:25",
+      "song_imagepath": "../images/Sab Tera.jpeg",
+      "song_audiopath": "../songs/Sab Tera.mp3",
+      "song_artists": ["Armaan Malik"],
+      "playlist": ["Armaan Malik"]
+    },
+    {
+      "song_name": "Sajna",
+      "song_duration": "2:42",
+      "song_imagepath": "../images/Sajna.jpeg",
+      "song_audiopath": "../songs/Sajna.mp3",
+      "song_artists": ["Badshah"],
+      "playlist": ["Badshah"]
+    },
+    {
+      "song_name": "Satranga",
+      "song_duration": "4:32",
+      "song_imagepath": "../images/Satranga.jpeg",
+      "song_audiopath": "../songs/Satranga.mp3",
+      "song_artists": ["Arijit Singh"],
+      "playlist": ["Arijit Singh", "Popular Songs", "Animal","Special"]
+    },
+    {
+      "song_name": "Saware",
+      "song_duration": "5:21",
+      "song_imagepath": "../images/Saware.jpeg",
+      "song_audiopath": "../songs/Saware.mp3",
+      "song_artists": ["Arijit Singh"],
+      "playlist": ["Arijit Singh"]
+    },
+    {
+      "song_name": "Samjhawan",
+      "song_duration": "4:25",
+      "song_imagepath": "../images/Samjhawan.jpeg",
+      "song_audiopath": "../songs/Samjhawan.mp3",
+      "song_artists": ["Arijit Singh", "Shreya Ghoshal"],
+      "playlist": [
+        "Arijit Singh",
+        "Shreya Ghoshal",
+        "Romantic Hits",
+        "Popular Songs"
+      ]
+    },
+    {
+      "song_name": "Tere Liye",
+      "song_duration": "5:01",
+      "song_imagepath": "../images/Tere Liye.jpeg",
+      "song_audiopath": "../songs/Tere Liye.mp3",
+      "song_artists": ["Atif Aslam", "Shreya Ghoshal"],
+      "playlist": ["Atif Aslam", "Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Tera Hua",
+      "song_duration": "3:51",
+      "song_imagepath": "../images/Tera Hua.jpeg",
+      "song_audiopath": "../songs/Tera Hua.mp3",
+      "song_artists": ["Atif Aslam"],
+      "playlist": ["Atif Aslam"]
+    },
+    {
+      "song_name": "Still Rollin",
+      "song_duration": "2:51",
+      "song_imagepath": "../images/Still Rollin.jpeg",
+      "song_audiopath": "../songs/Still Rollin.mp3",
+      "song_artists": ["Shubh"],
+      "playlist": ["Shubh", "Punjabi Hits"]
+    },
+    {
+      "song_name": "Tere Pyaar Mein",
+      "song_duration": "4:16",
+      "song_imagepath": "../images/Tere Pyaar Mein.jpeg",
+      "song_audiopath": "../songs/Tere Pyaar Mein.mp3",
+      "song_artists": ["Arijit Singh"],
+      "playlist": ["Arijit Singh", "Special"]
+    },
+    {
+      "song_name": "You and Me",
+      "song_duration": "2:50",
+      "song_imagepath": "../images/You and Me.jpeg",
+      "song_audiopath": "../songs/You and Me.mp3",
+      "song_artists": ["Shubh"],
+      "playlist": ["Shubh"]
+    },
+    {
+      "song_name": "Teri Ore",
+      "song_duration": "2:31",
+      "song_imagepath": "../images/Teri Ore.jpeg",
+      "song_audiopath": "../songs/Teri Ore.mp3",
+      "song_artists": ["Shreya Ghoshal", "Rahat Fateh Ali Khaan"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Mohe Rang Do Laal",
+      "song_duration": "3:58",
+      "song_imagepath": "../images/Mohe Rang Do Laal.jpeg",
+      "song_audiopath": "../songs/Mohe Rang Do Laal.mp3",
+      "song_artists": ["Shreya Ghoshal"],
+      "playlist": ["Shreya Ghoshal"]
+    },
+    {
+      "song_name": "Tumse Milke Dil Ka",
+      "song_duration": "5:40",
+      "song_imagepath": "../images/Tumse Milke Dil Ka.jpeg",
+      "song_audiopath": "../songs/Tumse Milke Dil Ka.mp3",
+      "song_artists": ["Sonu Nigam"],
+      "playlist": ["Sonu Nigam"]
+    },
+    {
+      "song_name": "Dope Shope",
+      "song_duration": "3:31",
+      "song_imagepath": "../images/Dope Shope.jpeg",
+      "song_audiopath": "../songs/Dope Shope.mp3",
+      "song_artists": ["Honey Singh"],
+      "playlist": ["Honey Singh","Special"]
+    },
+    {
+      "song_name": "Desi Kalakaar",
+      "song_duration": "4:13",
+      "song_imagepath": "../images/Desi Kalakaar.jpeg",
+      "song_audiopath": "../songs/Desi Kalakaar.mp3",
+      "song_artists": ["Honey Singh"],
+      "playlist": ["Honey Singh","Special"]
+    }
+  ]
+  
