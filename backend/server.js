@@ -13,7 +13,8 @@ let dbinstance;
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors({
-    origin: true,
+    origin: ["https://beat-x2-0-svm3.vercel.app/"],
+    methods:["GET","POST"],
     credentials: true
 }));
 app.use(cookieParser());
