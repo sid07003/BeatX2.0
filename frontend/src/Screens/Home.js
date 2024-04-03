@@ -12,7 +12,7 @@ export default function Home() {
     const [artistPlaylists, setArtistPlaylists] = useState([]);
 
     const getData = () => {
-        fetch("http://localhost:3001/getBeatxData", {
+        fetch("https://beat-x2-0.vercel.app//getBeatxData", {
             "method": "GET",
             "headers": {
                 "content-type": "application/json"
@@ -69,7 +69,7 @@ export default function Home() {
     };
 
     const logout = () => {
-        fetch("http://localhost:3001/logout", {
+        fetch("https://beat-x2-0.vercel.app//logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -84,7 +84,7 @@ export default function Home() {
     }
 
     const set_current_music = (element) => {
-        fetch("http://localhost:3001/setCurrentlyPlayingMusic", {
+        fetch("https://beat-x2-0.vercel.app//setCurrentlyPlayingMusic", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"

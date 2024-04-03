@@ -18,7 +18,7 @@ export default function AddSongs() {
     const {  musicPlayer } = useContext(context_music);
 
     useEffect(()=>{
-        fetch("http://localhost:3001/getAllSongs",{
+        fetch("https://beat-x2-0.vercel.app//getAllSongs",{
             method:"GET",
             headers:{
                 "content-type":"application/json"
@@ -54,7 +54,7 @@ export default function AddSongs() {
     }
 
     const addSong = (songId) => {
-        fetch("http://localhost:3001/addSong", {
+        fetch("https://beat-x2-0.vercel.app//addSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
