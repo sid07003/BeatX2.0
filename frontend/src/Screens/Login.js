@@ -22,7 +22,7 @@ export default function Login() {
         setEmail("");
         setPassword("");
 
-        fetch("https://beat-x2-0.vercel.app//login", {
+        fetch("https://beat-x2-0.vercel.app/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

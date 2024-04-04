@@ -10,7 +10,7 @@ export default function MusicPlayer() {
     const [volume, setVolume] = useState(50); // Initial volume set to 50
 
     const toggleLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app//addLikeSong", {
+        fetch("https://beat-x2-0.vercel.app/addLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -96,7 +96,7 @@ export default function MusicPlayer() {
     }
 
     const set_current_music = (element) => {
-        fetch("https://beat-x2-0.vercel.app//setCurrentlyPlayingMusic", {
+        fetch("https://beat-x2-0.vercel.app/setCurrentlyPlayingMusic", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -115,7 +115,7 @@ export default function MusicPlayer() {
     }
 
     const nextSong = (song) => {
-        fetch("https://beat-x2-0.vercel.app//nextSong", {
+        fetch("https://beat-x2-0.vercel.app/nextSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -134,7 +134,7 @@ export default function MusicPlayer() {
     }
 
     const prevSong = (song) => {
-        fetch("https://beat-x2-0.vercel.app//prevSong", {
+        fetch("https://beat-x2-0.vercel.app/prevSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -153,7 +153,7 @@ export default function MusicPlayer() {
     }
 
     const removeLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app//removeLikeSong", {
+        fetch("https://beat-x2-0.vercel.app/removeLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"

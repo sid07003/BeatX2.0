@@ -8,7 +8,7 @@ export default function Sidebar() {
     const [albums, setAlbums] = useState([]);
 
     useEffect(() => {
-        fetch("https://beat-x2-0.vercel.app//getAlbumData", {
+        fetch("https://beat-x2-0.vercel.app/getAlbumData", {
             "method": "GET",
             "headers": {
                 "content-type": "application/json"
