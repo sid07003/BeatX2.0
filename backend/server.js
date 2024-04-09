@@ -19,6 +19,7 @@ app.use(cors({
 }));
 
 app.options("/getAlbumData", cors());
+app.options("/getBeatxData", cors());
 app.use(cookieParser());
 
 const { MongoClient, ObjectId } = require('mongodb');
