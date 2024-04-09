@@ -120,8 +120,6 @@ export default function Artist() {
                     <div id="Name">{artistData}</div>
                     <div id="song_info">
                         <div>{songsData.length} Songs</div>
-                        <div style={{ marginLeft: "20px" }}>*</div>
-                        <div style={{ marginLeft: "20px" }}>40 Minutes</div>
                     </div>
                     <div id="play_all">
                         <div>
