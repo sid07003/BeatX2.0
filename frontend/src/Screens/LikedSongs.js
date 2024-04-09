@@ -8,7 +8,7 @@ export default function LikedSongs() {
     const likedSongsData = allSongs.filter(song => likedSongs.includes(song._id));
 
     const set_current_music = (element) => {
-        fetch("https://beat-x2-0.vercel.app/setCurrentlyPlayingMusic", {
+        fetch("http://localhost:3001/setCurrentlyPlayingMusic", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -29,7 +29,7 @@ export default function LikedSongs() {
     }
 
     const removeLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app/removeLikeSong", {
+        fetch("http://localhost:3001/removeLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"

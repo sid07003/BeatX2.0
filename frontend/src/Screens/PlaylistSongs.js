@@ -10,7 +10,7 @@ export default function PlaylistSongs() {
         setIsMusicClicked, setmusicPlayer, notification, setNotification } = useContext(context_music);
 
     useEffect(() => {
-        fetch("https://beat-x2-0.vercel.app/getPlaylistSongs", {
+        fetch("http://localhost:3001/getPlaylistSongs", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -30,7 +30,7 @@ export default function PlaylistSongs() {
     }, [playlistName])
 
     const toggleLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app/addLikeSong", {
+        fetch("http://localhost:3001/addLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -50,7 +50,7 @@ export default function PlaylistSongs() {
     }
 
     const set_current_music = (element) => {
-        fetch("https://beat-x2-0.vercel.app/setCurrentlyPlayingMusic", {
+        fetch("http://localhost:3001/setCurrentlyPlayingMusic", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -71,7 +71,7 @@ export default function PlaylistSongs() {
     }
 
     const removeLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app/removeLikeSong", {
+        fetch("http://localhost:3001/removeLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"

@@ -15,7 +15,7 @@ export default function Search(props) {
         setIsMusicClicked, setmusicPlayer } = useContext(context_music);
 
     useEffect(() => {
-        fetch("https://beat-x2-0.vercel.app/SearchedSongs", {
+        fetch("http://localhost:3001/SearchedSongs", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -59,7 +59,7 @@ export default function Search(props) {
     }
 
     const set_current_music = (element) => {
-        fetch("https://beat-x2-0.vercel.app/setCurrentlyPlayingMusic_and_recentlysearched", {
+        fetch("http://localhost:3001/setCurrentlyPlayingMusic_and_recentlysearched", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"

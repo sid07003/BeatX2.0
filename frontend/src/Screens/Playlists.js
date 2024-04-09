@@ -22,7 +22,7 @@ export default function Playlists() {
             songs: []
         }
 
-        fetch("https://beat-x2-0.vercel.app/addPlaylist", {
+        fetch("http://localhost:3001/addPlaylist", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -48,7 +48,7 @@ export default function Playlists() {
     }
 
     const getPlaylists = () => {
-        fetch("https://beat-x2-0.vercel.app/getPlaylist", {
+        fetch("http://localhost:3001/getPlaylist", {
             method: "GET",
             headers: {
                 "content-type": "application/json"
@@ -70,7 +70,7 @@ export default function Playlists() {
     }
 
     const remove_playlist = (playlistName) => {
-        fetch("https://beat-x2-0.vercel.app/removePlaylist", {
+        fetch("http://localhost:3001/removePlaylist", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
