@@ -12,14 +12,8 @@ let dbinstance;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors({
-    origin: ["https://beat-x2-0-svm3.vercel.app"],
-    methods:["GET","POST"],
-    credentials: true
-}));
+app.use(cors());
 
-app.options("/getAlbumData", cors());
-app.options("/getBeatxData", cors());
 app.use(cookieParser());
 
 const { MongoClient, ObjectId } = require('mongodb');
@@ -31,7 +25,6 @@ MongoClient.connect("mongodb+srv://SiddharthSharma:siddharth@cluster0.gacgrpw.mo
     .catch((err) => {
         console.log(err);
     });
-
 
 // --------------------------------- Token Verification middleware --------------------------------------
 
@@ -55,6 +48,7 @@ const verifyToken = (req, res, next) => {
 
 // ---------------------------------- Authentication End Points ------------------------------------------
 app.post("/login", async (req, res) => {
+    console.log("helo")
     try {
         const loginData = req.body;
 
@@ -77,6 +71,7 @@ app.post("/login", async (req, res) => {
                 httpOnly: true,
                 path: "/"
             });
+            console.log("done")
             res.status(200).json({ success: true });
         });
     } catch (error) {
@@ -519,6 +514,10 @@ app.get("/getAllSongs",(req,res)=>{
     .catch((err)=>{
         console.log(err);
     })
+})
+
+app.get("/",(req,res)=>{
+    res.send("Welcome to beatx server");
 })
 
 // --------------------------------------------------------------------------------------------------
