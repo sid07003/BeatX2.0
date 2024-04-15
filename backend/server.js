@@ -1,4 +1,5 @@
 require('dotenv').config({ path: './.env' });
+const port = process.env.PORT || 3001
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
@@ -522,7 +523,7 @@ app.get("/",(req,res)=>{
 
 // --------------------------------------------------------------------------------------------------
 
-app.listen(3001, (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.log(err);
     }
