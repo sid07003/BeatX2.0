@@ -16,7 +16,7 @@ export default function Search(props) {
 
     useEffect(() => {
         fetch("http://localhost:3001/SearchedSongs", {
-            "method": "POST",
+            "method": "GET",
             "headers": {
                 "content-type": "application/json"
             },

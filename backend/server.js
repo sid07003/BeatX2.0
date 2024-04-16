@@ -13,7 +13,11 @@ let dbinstance;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin:"http://localhost:3000",
+    methods:["GET","POST"],
+    credentials:true
+}));
 
 app.use(cookieParser());
 
@@ -462,6 +466,18 @@ app.post("/getPlaylistSongs", verifyToken, (req, res) => {
             res.status(500).json({ error: "Error finding user" });
         });
 });
+
+app.get("/SearchedSongs",verifyToken,(req,res)=>{
+    const userId=req.userId;
+
+    dbinstance.collection("user_data").findOne({_id:userId})
+    .then((data)=>{
+        res.status(200).json({searchedSongs:data.recentlySearchedSongs});
+    })
+    .catch((err)=>{
+        res.status(500).json({err:"Internal Server Error"});
+    })
+})
 
 app.post("/addSong", verifyToken, (req, res) => {
     const userId = req.userId;

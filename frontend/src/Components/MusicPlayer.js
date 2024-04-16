@@ -96,7 +96,7 @@ export default function MusicPlayer() {
     }
 
     const set_current_music = (element) => {
-        fetch("http://localhost:3001//setCurrentlyPlayingMusic", {
+        fetch("http://localhost:3001/setCurrentlyPlayingMusic", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -115,7 +115,7 @@ export default function MusicPlayer() {
     }
 
     const nextSong = (song) => {
-        fetch("http://localhost:3001//nextSong", {
+        fetch("http://localhost:3001/nextSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -134,7 +134,7 @@ export default function MusicPlayer() {
     }
 
     const prevSong = (song) => {
-        fetch("http://localhost:3001//prevSong", {
+        fetch("http://localhost:3001/prevSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -153,7 +153,7 @@ export default function MusicPlayer() {
     }
 
     const removeLike = (songId) => {
-        fetch("http://localhost:3001//removeLikeSong", {
+        fetch("http://localhost:3001/removeLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
