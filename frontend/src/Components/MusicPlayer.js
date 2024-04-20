@@ -56,7 +56,6 @@ export default function MusicPlayer() {
         }
     }
 
-    // Function to parse "MM:SS" format to seconds
     const parseDurationToSeconds = (duration) => {
         const [minutes, seconds] = duration.split(":").map(parseFloat);
         return minutes * 60 + seconds;
