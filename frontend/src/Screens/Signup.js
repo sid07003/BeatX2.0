@@ -27,7 +27,7 @@ export default function Signup() {
     setPassword("");
     setConfirmPassword("");
 
-    fetch("http://localhost:3001/signup", {
+    fetch("https://beat-x2-0.vercel.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
