@@ -14,7 +14,7 @@ let dbinstance;
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors({
-    origin:"https://beat-x2-0-a8io.vercel.app/",
+    origin:"https://beat-x2-0-a8io.vercel.app",
     methods:["GET","POST"],
     credentials:true
 }));
