@@ -33,6 +33,7 @@ export default function Login() {
         })
             .then(response => {
                 if (response.status === 400) {
+                    console.log("Invalid");
                     setNotification("Invalid Credentials");
                     setIsError(true);
                     setIsNotification(true);
