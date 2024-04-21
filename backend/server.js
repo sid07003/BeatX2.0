@@ -121,6 +121,7 @@ app.post("/signup", (req, res) => {
 // ------------------------------------------ retrieve beatx data -------------------------------------
 app.get("/getBeatxData", (req, res) => {
     const token = req.cookies.access_token;
+    console.log(token);
 
     let isAuthenticated = false;
     if (token) {
@@ -133,6 +134,7 @@ app.get("/getBeatxData", (req, res) => {
                         fetchBeatxData(isAuthenticated, res, result);
                     })
                     .catch((err) => {
+                        console.log("here we go");
                         res.status(500).json({ error: "An error occurred while fetching data" });
                     });
             } else {
@@ -141,6 +143,7 @@ app.get("/getBeatxData", (req, res) => {
             }
         });
     } else {
+        console.log("else");
         fetchBeatxData(isAuthenticated, res);
     }
 });
