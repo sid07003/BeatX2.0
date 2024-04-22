@@ -22,6 +22,7 @@ export default function Home() {
         })
             .then(data => data.json())
             .then((result) => {
+                console.log(result);
                 setArtistPlaylists(result.artistPlaylists);
                 setAlbums(result.albums);
                 setAllSongs(result.allSongs);
