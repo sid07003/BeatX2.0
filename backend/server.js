@@ -538,7 +538,7 @@ app.get("/getAllSongs",(req,res)=>{
 })
 
 app.get("/",(req,res)=>{
-    res.send(process.env.JWT_SECRET);
+    res.send("welcome to beatx server);
 })
 
 // --------------------------------------------------------------------------------------------------
