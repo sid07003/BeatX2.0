@@ -72,6 +72,7 @@ app.post("/login", async (req, res) => {
             const accessToken = jwt.sign({ id: result._id, email: result.email }, process.env.JWT_SECRET, { expiresIn: 24 * 60 * 60 * 1000 });
 
             res.cookie("access_token", accessToken, {
+                secure:true,
                 maxAge: 24 * 60 * 60 * 1000,
                 httpOnly: true,
                 path: "/"
