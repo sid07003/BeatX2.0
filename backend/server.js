@@ -68,11 +68,11 @@ app.post("/login", async (req, res) => {
             if (err || !response) {
                 return res.status(400).json({ error: "Invalid credentials" });
             }
-            console.log(process.env.JWT_SECRET);
+            
             const accessToken = jwt.sign({ id: result._id, email: result.email }, process.env.JWT_SECRET, { expiresIn: 24 * 60 * 60 * 1000 });
+            
 
             res.cookie("access_token", accessToken, {
-                secure:true,
                 maxAge: 24 * 60 * 60 * 1000,
                 httpOnly: true,
                 path: "/"
