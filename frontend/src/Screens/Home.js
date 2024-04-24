@@ -17,8 +17,8 @@ export default function Home() {
             "headers": {
                 "content-type": "application/json"
             },
-            withCredentials: true,
-            credentials: 'include'
+            // withCredentials: true,
+            // credentials: 'include'
         })
             .then(data => data.json())
             .then((result) => {
