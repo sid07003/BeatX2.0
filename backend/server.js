@@ -132,8 +132,8 @@ app.get("/getBeatxData", (req, res) => {
                 const userId = new ObjectId(decoded.id);
                 dbinstance.collection("user_data").findOne({ _id: userId })
                     .then((result) => {
-                        res.status(200).json({data:result});
-                        // fetchBeatxData(isAuthenticated, res, result);
+                        // res.status(200).json({data:result});
+                        fetchBeatxData(isAuthenticated, res, result);
                     })
                     .catch((err) => {
                         console.log("here we go");
