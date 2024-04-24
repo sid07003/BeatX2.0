@@ -78,7 +78,7 @@ app.post("/login", async (req, res) => {
                 path: "/"
             });
             console.log("done")
-            res.status(200).json({ success: true,access_token:accessToken });
+            res.status(200).json({ success: true,access_token:accessToken,cookie:req.cookies.access_token });
         });
     } catch (error) {
         console.error(error);
