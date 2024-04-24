@@ -124,31 +124,30 @@ app.get("/getBeatxData", (req, res) => {
     const token = req.cookies.access_token;
     console.log(token);
 
-    res.status(200).json({cookie:token});
-
-    // let isAuthenticated = false;
-    // if (token) {
-    //     jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
-    //         if (!err) {
-    //             isAuthenticated = true;
-    //             const userId = new ObjectId(decoded.id);
-    //             dbinstance.collection("user_data").findOne({ _id: userId })
-    //                 .then((result) => {
-    //                     fetchBeatxData(isAuthenticated, res, result);
-    //                 })
-    //                 .catch((err) => {
-    //                     console.log("here we go");
-    //                     res.status(500).json({ error: "An error occurred while fetching data" });
-    //                 });
-    //         } else {
-    //             console.log(err);
-    //             fetchBeatxData(isAuthenticated, res);
-    //         }
-    //     });
-    // } else {
-    //     console.log("else");
-    //     fetchBeatxData(isAuthenticated, res);
-    // }
+    let isAuthenticated = false;
+    if (token) {
+        jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+            if (!err) {
+                isAuthenticated = true;
+                const userId = new ObjectId(decoded.id);
+                dbinstance.collection("user_data").findOne({ _id: userId })
+                    .then((result) => {
+                        res.status(200).json({data:result});
+                        // fetchBeatxData(isAuthenticated, res, result);
+                    })
+                    .catch((err) => {
+                        console.log("here we go");
+                        res.status(500).json({ error: "An error occurred while fetching data" });
+                    });
+            } else {
+                console.log(err);
+                fetchBeatxData(isAuthenticated, res);
+            }
+        });
+    } else {
+        console.log("else");
+        fetchBeatxData(isAuthenticated, res);
+    }
 });
 
 function fetchBeatxData(isAuthenticated, res, userData = {}, lastPlayedMusic = {}) {
