@@ -79,7 +79,7 @@ app.post("/login", async (req, res) => {
                 httpOnly: true,
                 path: "/"
             });
-            console.log("cookies: "+req.cookie.access_token);
+            console.log("cookies: "+req.cookies.access_token);
             res.status(200).json({ success: true,access_token:accessToken,cookie:req.cookies.access_token });
         });
     } catch (error) {
