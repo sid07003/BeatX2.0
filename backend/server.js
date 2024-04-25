@@ -19,6 +19,12 @@ app.use(cors({
     credentials:true
 }));
 
+app.use((req, res, next) => {
+    // Allow credentials only for requests coming from the specified origin
+    res.header("Access-Control-Allow-Credentials", "true");
+    next();
+});
+
 app.use(cookieParser());
 
 const { MongoClient, ObjectId } = require('mongodb');
