@@ -68,8 +68,10 @@ app.post("/login", async (req, res) => {
             if (err || !response) {
                 return res.status(400).json({ error: "Invalid credentials" });
             }
-            
+
+            console.log(process.env.JWT_SECRET);
             const accessToken = jwt.sign({ id: result._id, email: result.email }, process.env.JWT_SECRET, { expiresIn: 24 * 60 * 60 * 1000 });
+            console.log(accessToken);
             
 
             res.cookie("access_token", accessToken, {
@@ -77,7 +79,7 @@ app.post("/login", async (req, res) => {
                 httpOnly: true,
                 path: "/"
             });
-            console.log("done")
+            console.log(req.cookie.access_token);
             res.status(200).json({ success: true,access_token:accessToken,cookie:req.cookies.access_token });
         });
     } catch (error) {
