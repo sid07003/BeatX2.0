@@ -28,8 +28,8 @@ export default function Login() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(loginData),
-            withCredentials: true,
-            credentials: 'include'
+            // withCredentials: true,
+            // credentials: 'include'
         })
             .then(response => {
                 if (response.status === 400) {
