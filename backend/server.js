@@ -69,15 +69,18 @@ app.post("/login", async (req, res) => {
                 return res.status(400).json({ error: "Invalid credentials" });
             }
 
+            console.log("env: "+process.env.JWT_SECRET);
             const accessToken = jwt.sign({ id: result._id, email: result.email }, process.env.JWT_SECRET, { expiresIn: 24 * 60 * 60 * 1000 });
+            console.log("accessToken: "+accessToken);
+            
 
             res.cookie("access_token", accessToken, {
                 maxAge: 24 * 60 * 60 * 1000,
                 httpOnly: true,
                 path: "/"
             });
-            console.log("done")
-            res.status(200).json({ success: true });
+            console.log("cookies: "+req.cookies.access_token);
+            res.status(200).json({ success: true,access_token:accessToken,cookie:req.cookies.access_token });
         });
     } catch (error) {
         console.error(error);
@@ -121,6 +124,7 @@ app.post("/signup", (req, res) => {
 // ------------------------------------------ retrieve beatx data -------------------------------------
 app.get("/getBeatxData", (req, res) => {
     const token = req.cookies.access_token;
+    console.log(token);
 
     let isAuthenticated = false;
     if (token) {
@@ -130,9 +134,11 @@ app.get("/getBeatxData", (req, res) => {
                 const userId = new ObjectId(decoded.id);
                 dbinstance.collection("user_data").findOne({ _id: userId })
                     .then((result) => {
+                        // res.status(200).json({data:result});
                         fetchBeatxData(isAuthenticated, res, result);
                     })
                     .catch((err) => {
+                        console.log("here we go");
                         res.status(500).json({ error: "An error occurred while fetching data" });
                     });
             } else {
@@ -141,6 +147,7 @@ app.get("/getBeatxData", (req, res) => {
             }
         });
     } else {
+        console.log("else");
         fetchBeatxData(isAuthenticated, res);
     }
 });
@@ -534,7 +541,7 @@ app.get("/getAllSongs",(req,res)=>{
 })
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to beatx server");
+    res.send("welcome to beatx server");
 })
 
 // --------------------------------------------------------------------------------------------------

@@ -1,7 +1,6 @@
-import React, { useState,useContext } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../SCSS/Login.scss';
-import { context_music } from "../App.js";
 
 export default function Login() {
     const navigate = useNavigate();
@@ -15,20 +14,23 @@ export default function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
     
-        const loginData = { email, password };
+        const loginData = {
+            email: email,
+            password: password
+        };
     
         try {
-            const response = await fetch("http://localhost:3001/login", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
+            const response = await fetch('https://beat-x2-0.vercel.app/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify(loginData),
-                credentials: "include"
+                credentials: 'include'
             });
     
             if (response.status === 400 || response.status === 401) {
-                console.log("entered")
-                setNotification("Invalid Credentials");
-                console.log("entered1")
+                setNotification('Invalid Credentials');
                 setIsError(true);
                 setIsNotification(true);
                 setTimeout(() => setIsNotification(false), 2000);
@@ -36,21 +38,21 @@ export default function Login() {
             }
     
             if (!response.ok) {
-                setNotification("Login failed. Please try again.");
+                setNotification('Login failed. Please try again.');
                 setIsError(true);
                 setIsNotification(true);
                 setTimeout(() => setIsNotification(false), 2000);
                 return;
             }
     
+            const result = await response.json();
             setIsError(false);
-            setEmail("");
-            setPassword("");
-            navigate("/");
-    
+            setEmail('');
+            setPassword('');
+            navigate('/');
         } catch (error) {
-            console.error("Network error:", error);
-            setNotification("Network error. Please try again.");
+            console.error('Network error:', error);
+            setNotification('Network error. Please try again.');
             setIsError(true);
             setIsNotification(true);
             setTimeout(() => setIsNotification(false), 2000);
