@@ -1,5 +1,5 @@
 require('dotenv').config({ path: './.env' });
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3001;
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
@@ -22,7 +22,7 @@ app.use(cors({
 app.use(cookieParser());
 
 const { MongoClient, ObjectId } = require('mongodb');
-MongoClient.connect("mongodb+srv://SiddharthSharma:siddharth@cluster0.gacgrpw.mongodb.net/")
+MongoClient.connect("mongodb+srv://SiddharthSharma:siddharthsharma@cluster0.gacgrpw.mongodb.net/")
     .then((client) => {
         dbinstance = client.db("beatx");
         console.log("MongoDB connected");

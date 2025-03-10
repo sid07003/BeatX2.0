@@ -59,11 +59,12 @@
 
 .library {
     width: 80%;
-    height: auto;
+    max-height: 370px;
     background-color: rgba(128, 128, 128, 0.2);
     color: white;
     margin-top: 30px;
     border-radius: 12px;
+    overflow-y: scroll;
 }
 
 .heading {

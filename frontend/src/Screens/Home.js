@@ -12,7 +12,7 @@ export default function Home() {
     const [artistPlaylists, setArtistPlaylists] = useState([]);
 
     const getData = () => {
-        fetch("https://beat-x2-0.vercel.app/getBeatxData", {
+        fetch("http://localhost:3001/getBeatxData", {
             "method": "GET",
             "headers": {
                 "content-type": "application/json"
@@ -22,6 +22,7 @@ export default function Home() {
         })
             .then(data => data.json())
             .then((result) => {
+                console.log("result: ", result)
                 setArtistPlaylists(result.artistPlaylists);
                 setAlbums(result.albums);
                 setAllSongs(result.allSongs);
@@ -69,7 +70,7 @@ export default function Home() {
     };
 
     const logout = () => {
-        fetch("https://beat-x2-0.vercel.app/logout", {
+        fetch("http://localhost:3001/logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -84,24 +85,27 @@ export default function Home() {
     }
 
     const set_current_music = (element) => {
-        fetch("https://beat-x2-0.vercel.app/setCurrentlyPlayingMusic", {
-            "method": "POST",
-            "headers": {
-                "content-type": "application/json"
-            },
-            "body": JSON.stringify({ "song": element }),
-            withCredentials: true,
-            credentials: 'include'
-        })
-            .then(res => res.json())
-            .then((result) => {
-                set_currently_playing_music(element);
-                setIsMusicClicked(true);
-                setmusicPlayer(true);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+        // fetch("http://localhost:3001/setCurrentlyPlayingMusic", {
+        //     "method": "POST",
+        //     "headers": {
+        //         "content-type": "application/json"
+        //     },
+        //     "body": JSON.stringify({ "song": element }),
+        //     withCredentials: true,
+        //     credentials: 'include'
+        // })
+        //     .then(res => res.json())
+        //     .then((result) => {
+        //         set_currently_playing_music(element);
+        //         setIsMusicClicked(true);
+        //         setmusicPlayer(true);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     })
+        set_currently_playing_music(element);
+        setIsMusicClicked(true);
+        setmusicPlayer(true);
     }
 
     return (

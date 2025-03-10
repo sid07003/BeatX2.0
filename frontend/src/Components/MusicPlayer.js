@@ -10,7 +10,7 @@ export default function MusicPlayer() {
     const [volume, setVolume] = useState(50); // Initial volume set to 50
 
     const toggleLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app/addLikeSong", {
+        fetch("http://localhost:3001/addLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -71,10 +71,11 @@ export default function MusicPlayer() {
     }, []);
 
     useEffect(() => {
-        setIsMusicClicked(false);
+        console.log("music clicked")
         if (isMusicClicked) {
             playMusic();
         }
+        setIsMusicClicked(false);
     }, [isMusicClicked])
 
     const convert_current_time = (currentTime) => {
@@ -95,7 +96,7 @@ export default function MusicPlayer() {
     }
 
     const set_current_music = (element) => {
-        fetch("https://beat-x2-0.vercel.app/setCurrentlyPlayingMusic", {
+        fetch("http://localhost:3001/setCurrentlyPlayingMusic", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -114,7 +115,7 @@ export default function MusicPlayer() {
     }
 
     const nextSong = (song) => {
-        fetch("https://beat-x2-0.vercel.app/nextSong", {
+        fetch("http://localhost:3001/nextSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -133,7 +134,7 @@ export default function MusicPlayer() {
     }
 
     const prevSong = (song) => {
-        fetch("https://beat-x2-0.vercel.app/prevSong", {
+        fetch("http://localhost:3001/prevSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
@@ -152,7 +153,7 @@ export default function MusicPlayer() {
     }
 
     const removeLike = (songId) => {
-        fetch("https://beat-x2-0.vercel.app/removeLikeSong", {
+        fetch("http://localhost:3001/removeLikeSong", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json"
